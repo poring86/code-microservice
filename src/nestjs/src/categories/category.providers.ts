@@ -24,6 +24,11 @@ export namespace CATEGORY_PROVIDERS {
       },
       inject: [getModelToken(CategorySequelize.CategoryModel)]
     };
+
+    export const CATEGORY_REPOSITORY = {
+      provide: 'CategoryRepository',
+      useExisting: 'CategorySequelizeRepository',
+    };
   }
 
 

@@ -26,7 +26,7 @@ export class CategoriesController {
   @Inject(CreateCategoryUseCase.UseCase)
   private createUseCase: CreateCategoryUseCase.UseCase;
 
-  @Inject(CreateCategoryUseCase.UseCase)
+  @Inject(UpdateCategoryUseCase.UseCase)
   private updateUseCase: UpdateCategoryUseCase.UseCase;
 
   @Inject(ListCategoriesUseCase.UseCase)
