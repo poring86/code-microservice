@@ -1,13 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CategoriesController } from './categories.controller';
-import { CreateCategoryDto } from './dto/create-category.dto';
+import { CategoriesController } from '../../categories.controller';
+import { CreateCategoryDto } from '../../dto/create-category.dto';
 import {
   CreateCategoryUseCase,
   UpdateCategoryUseCase,
   GetCategoryUseCase,
   ListCategoriesUseCase,
 } from '@fc/micro-videos/category/application';
-import { UpdateCategoryDto } from './dto/update-category.dto';
+import { UpdateCategoryDto } from '../../dto/update-category.dto';
 import { SortDirection } from '@fc/micro-videos/dist/@seedwork/domain/repository/repository-contracts';
 
 describe('CategoriesController unit tests', () => {
